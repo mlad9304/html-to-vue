@@ -18,6 +18,11 @@ export default new Router({
         path: '/processed',
         name: 'processed',
         component: () => import('@/views/processed/index')
+      },
+      {
+        path: '/congratulation',
+        name: 'congratulation',
+        component: () => import('@/views/congratulation/index')
       }
     ]
   }]
