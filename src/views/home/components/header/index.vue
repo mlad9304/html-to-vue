@@ -1,7 +1,7 @@
 <template>
   <div class="header">
     <img src="@/assets/img/elements.png" alt="" class="elem">
-    <Samsung />
+    <Samsung :city="city" :name="name" />
     <div class="container">
       <div class="row">
         <div class="col-12">
@@ -16,7 +16,7 @@
           </div>
         </div>
       </div>
-      <SamsungMobile />
+      <SamsungMobile :name="name" :city="city" />
     </div>
   </div>
 </template>
@@ -36,7 +36,8 @@ export default {
     CheckPointsForm,
     Samsung,
     SamsungMobile
-  }
+  },
+  props: ['name', 'city']
 }
 </script>
 

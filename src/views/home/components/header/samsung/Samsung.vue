@@ -6,12 +6,12 @@
         Samsung S10 Winner
       </p>
       <p class="samsung__name">
-        Serge Gaingsbourg
+        {{ name }}
       </p>
       <div class="samsung__line"></div>
-      <div class="samsung__addr">
+      <div class="samsung__addr px-2">
         <i class="fa fa-map-marker-alt"></i>
-        from Rennes, 1 min ago
+        from {{ city }}, 1 min ago
       </div>
     </div>
     <img src="@/assets/img/girl.png" alt="" class="girl__pic">
@@ -20,7 +20,8 @@
 
 <script>
 export default {
-  name: 'samsung'
+  name: 'samsung',
+  props: ['name', 'city']
 }
 </script>
 
