@@ -1,20 +1,20 @@
 <template>
   <div>
-    <CheckPoints />
+    <Header />
     <Sponsor />
     <Well />
   </div>
 </template>
 
 <script>
-import CheckPoints from './components/CheckPoints'
+import Header from './components/Header'
 import Sponsor from './components/Sponser'
 import Well from './components/Well'
 
 export default {
   name: 'home',
   components: {
-    CheckPoints,
+    Header,
     Sponsor,
     Well
   }
