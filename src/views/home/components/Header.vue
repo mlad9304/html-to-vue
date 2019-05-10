@@ -1,19 +1,23 @@
 <template>
   <header class="header" id="header">
-    <img src="@/assets/img/elements.png" alt="" class="elem">
-    <Samsung />
-    <div class="container">
-      <Logo />
-      <div class="row">
-        <div class="col-12 col-lg-7 col-xl-6">
-          <div class="offer">
-            <CheckPointsTitle />
-            <CheckPointsForm />
-          </div>
+  <img src="@/assets/img/elements.png" alt="" class="elem">
+  <Samsung />
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <Logo :class="{'d-flex': true}" />
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 col-lg-7 col-xl-6">
+        <div class="offer">
+          <CheckPointsTitle />
+          <CheckPointsForm />
         </div>
       </div>
-      <SamsungMobile />
     </div>
+    <SamsungMobile />
+  </div>
   </header>
 </template>
 

@@ -1,7 +1,11 @@
 <template>
   <section class="header_proc" id="header_proc">
     <div class="container">
-      <Logo />
+      <div class="row">
+        <div class="col-5">
+          <Logo :class="{logo: true, logo_cong: true, logo_proc: true, 'd-flex': true}" />
+        </div>
+      </div>
       <div class="row">
         <div class="col-md-9">
           <div class="offer">
