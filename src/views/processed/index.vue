@@ -1,5 +1,6 @@
 <template>
-  <section class="header_proc" id="header_proc">
+  <section class="header_proc">
+    <vue-headful title="Processed" />
     <div class="container">
       <div class="row">
         <div class="col-5">

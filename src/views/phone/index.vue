@@ -1,5 +1,6 @@
 <template>
   <div>
+    <vue-headful title="Phone" />
     <Samsung />
     <IPhone />
   </div>

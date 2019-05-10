@@ -1,5 +1,6 @@
 <template>
   <div>
+    <vue-headful title="Home" />
     <Header :name="currentName" :city="currentCity" />
     <Sponsor />
     <Questions />

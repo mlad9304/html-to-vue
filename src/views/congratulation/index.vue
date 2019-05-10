@@ -1,5 +1,6 @@
 <template>
-  <header class="header_cong" id="header_cong">
+  <section class="header_cong">
+    <vue-headful title="Congratulation" />
     <div class="container">
       <div class="row">
         <div class="col-5">
@@ -27,7 +28,7 @@
         </div>
       </div>
     </div>
-  </header>
+  </section>
 </template>
 
 <script>

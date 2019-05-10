@@ -1,5 +1,6 @@
 <template>
   <div>
+    <vue-headful title="Congrats" />
     <Header />
     <Delivery />
     <Feedback />
