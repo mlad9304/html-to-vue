@@ -28,6 +28,11 @@ export default new Router({
         path: '/congratulation',
         name: 'congratulation',
         component: () => import('@/views/congratulation/index')
+      },
+      {
+        path: '/congrats',
+        name: 'congrats',
+        component: () => import('@/views/congrats/index')
       }
     ]
   }]
