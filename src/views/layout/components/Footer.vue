@@ -3,10 +3,7 @@
     <div class="container">
       <div class="row">
         <div class="col-3">
-          <a href="#" class="logo d-flex logo_footer">
-            <div class="logo__blue"></div>
-            <div class="logo__pink"></div>
-          </a>
+          <Logo :class="{'d-flex': true, logo_footer: true}" />
         </div>
         <div class="col-lg-5 col-9 ml-auto">
           <div class="footer-info d-flex flex-column">
@@ -24,8 +21,13 @@
 </template>
 
 <script>
+import Logo from '@/components/Logo'
+
 export default {
-  name: 'Footer'
+  name: 'Footer',
+  components: {
+    Logo
+  }
 }
 </script>
 
