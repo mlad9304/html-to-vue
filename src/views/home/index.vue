@@ -20,14 +20,7 @@
         <img src="@/assets/img/girl.png" alt="" class="girl__pic">
       </div>
       <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <a href="#" class="logo d-flex">
-              <div class="logo__blue"></div>
-              <div class="logo__pink"></div>
-            </a>
-          </div>
-        </div>
+        <Logo />
         <div class="row">
           <div class="col-12 col-lg-7 col-xl-6">
             <div class="offer">
@@ -101,86 +94,63 @@
         <div class="row row_col">
           <div class="col-lg-7 col-xl-6 ml-auto">
             <div class="answer answer_first d-flex align-items-center">
-              <div class="answer__pic d-flex
-              align-items-center
-              justify-content-center">
-              <span>?</span>
+              <div class="answer__pic d-flex align-items-center justify-content-center">
+                <span>?</span>
+              </div>
+              <div class="answer__info d-flex flex-column">
+                <p class="answer__quest">
+                  Do I need a credit card to use this?
+                </p>
+                <p class="answer__ans">
+                  Nope!
+                </p>
+              </div>
             </div>
-            <div class="answer__info d-flex flex-column">
-              <p class="answer__quest">
-                Do I need a credit card to use this?
-              </p>
-              <p class="answer__ans">
-                Nope!
-              </p>
+          </div>
+          <div class="col-lg-7 col-xl-6 ml-auto">
+            <div class="answer d-flex align-items-center">
+              <div class="answer__pic d-flex align-items-center justify-content-center">
+                <span>?</span>
+              </div>
+              <div class="answer__info d-flex flex-column">
+                <p class="answer__quest">
+                  How do I get my prize?
+                </p>
+                <p class="answer__ans">
+                  It’s simple!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-7 col-xl-6 ml-auto">
+            <div class="answer answer_last d-flex align-items-center">
+              <div class="answer__pic d-flex align-items-center justify-content-center">
+                <span>?</span>
+              </div>
+              <div class="answer__info d-flex flex-column">
+                <p class="answer__quest">
+                  Do I need a credit card to use this?
+                </p>
+                <p class="answer__ans">
+                  Nope!
+                </p>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-lg-7 col-xl-6 ml-auto">
-          <div class="answer d-flex align-items-center">
-            <div class="answer__pic d-flex
-            align-items-center
-            justify-content-center">
-            <span>?</span>
-          </div>
-          <div class="answer__info d-flex flex-column">
-            <p class="answer__quest">
-              How do I get my prize?
-            </p>
-            <p class="answer__ans">
-              It’s simple!
-            </p>
-          </div>
-        </div>
       </div>
-      <div class="col-lg-7 col-xl-6 ml-auto">
-        <div class="answer answer_last d-flex align-items-center">
-          <div class="answer__pic d-flex
-          align-items-center
-          justify-content-center">
-          <span>?</span>
-        </div>
-        <div class="answer__info d-flex flex-column">
-          <p class="answer__quest">
-            Do I need a credit card to use this?
-          </p>
-          <p class="answer__ans">
-            Nope!
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-  </div>
-  </section>
-  <footer class="footer d-flex align-items-center" id="footer">
-    <div class="container">
-      <div class="row">
-        <div class="col-3">
-          <a href="#" class="logo d-flex logo_footer">
-            <div class="logo__blue"></div>
-            <div class="logo__pink"></div>
-          </a>
-        </div>
-        <div class="col-lg-5 col-9 ml-auto">
-          <div class="footer-info d-flex flex-column">
-            <p class="rights">
-              2019 France. All Rights Reserved.
-            </p>
-            <a href="#" class="privacy">
-              Privacy & Terms
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
+    </section>
   </div>
 </template>
 
 <script>
+import Logo from '@/components/Logo'
+
 export default {
-  name: 'home'
+  name: 'home',
+  components: {
+    Logo
+  }
 }
 </script>
 
