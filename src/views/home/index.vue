@@ -2,21 +2,21 @@
   <div>
     <Header />
     <Sponsor />
-    <Well />
+    <Questions />
   </div>
 </template>
 
 <script>
 import Header from './components/header'
 import Sponsor from './components/Sponser'
-import Well from './components/Well'
+import Questions from './components/Questions'
 
 export default {
   name: 'home',
   components: {
     Header,
     Sponsor,
-    Well
+    Questions
   }
 }
 </script>
