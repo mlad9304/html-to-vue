@@ -3,7 +3,7 @@
     <div class="container">
       <div class="row">
         <div class="col-3">
-          <Logo :class="{'d-flex': true, logo_footer: true}" />
+          <Logo class="logo_footer d-flex" />
         </div>
         <div class="col-lg-5 col-9 ml-auto">
           <div class="footer-info d-flex flex-column">

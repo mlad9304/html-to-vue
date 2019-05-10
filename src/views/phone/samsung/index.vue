@@ -8,7 +8,7 @@
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <Logo :class="{logo_phone: true, 'd-flex': true}" />
+          <Logo class="logo_phone d-flex" />
         </div>
       </div>
       <div class="row row_brd">

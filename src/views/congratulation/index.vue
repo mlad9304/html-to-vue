@@ -3,7 +3,7 @@
     <div class="container">
       <div class="row">
         <div class="col-5">
-          <Logo :class="{logo_cong: true, 'd-flex': true}" />
+          <Logo class="logo_cong d-flex" />
         </div>
       </div>
       <div class="row">

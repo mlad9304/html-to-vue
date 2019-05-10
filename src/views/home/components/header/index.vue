@@ -5,7 +5,7 @@
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <Logo :class="{'d-flex': true}" />
+          <Logo class="d-flex" />
         </div>
       </div>
       <div class="row">
