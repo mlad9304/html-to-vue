@@ -8,10 +8,17 @@ export default new Router({
   routes: [{
     path: '',
     component: Layout,
-    children: [{
-      path: '/',
-      name: 'home',
-      component: () => import('@/views/home/index')
-    }]
+    children: [
+      {
+        path: '/',
+        name: 'home',
+        component: () => import('@/views/home/index')
+      },
+      {
+        path: '/processed',
+        name: 'processed',
+        component: () => import('@/views/processed/index')
+      }
+    ]
   }]
 })
