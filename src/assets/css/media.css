@@ -1,0 +1,686 @@
+	/*  -----  MEDIA QUERIES  -----  */
+
+
+	/* Main Page */
+
+
+	/* 992-1200px */
+	@media screen and (max-width: 1200px) {
+		.girl {
+			max-width: 650px;
+		}
+		.form__input, .form__btn {
+			max-width: 385px;
+		}
+		.samsung {
+			width: 180px;
+			height: 135px;
+			top: 85px;
+			left: 226.5px;
+		}
+		.samsung__text {
+			font-size: 17px;
+		}
+		.samsung__name {
+			font-size: 16px;
+		}
+		.samsung__line {
+			display: none;
+		}
+		.samsung__addr {
+			font-size: 13px;
+		}
+		.header, .well, .sponsors {
+			padding-bottom: 75px;
+		}
+		.ask-girl {
+			max-width: 500px;
+			top: 170px;
+		}
+		.rights {
+			font-size: 22px;
+		}
+	}
+
+	/* 768-992px */
+	@media screen and (max-width: 992px) {
+		.ask-girl {
+			top: 300px;
+		}
+		.girl_md {
+			position: relative;
+			top: 50px;
+		}
+		.logo {
+			margin: 0 auto 50px;
+			width: 150px;
+		}
+		.offer__title {
+			margin: 0 auto;
+		}
+		.form {
+			-ms-align-items: center;
+			align-items: center;
+		}
+		.france {
+			left: 40px;
+		}
+		.form__input, .form__btn {
+			width: 385px;
+		}
+		.header {
+			padding-bottom: 0;
+		}
+		.title_well {
+			text-align: center;
+		}
+		.logo_footer {
+			margin: 0;
+		}
+		.samsung__text {
+			font-size: 16px;
+		}
+		.samsung__name {
+			font-size: 15px;
+		}
+	}
+
+	/* 576-767px */
+	@media screen and (max-width: 767px) {
+		.france {
+			left: 95px;
+		}
+		.rights {
+			font-size: 17px;
+		}
+		.logo div {
+			width: 50px;
+			height: 50px;
+		}
+		.logo {
+			margin: 0;
+			margin-bottom: 75px;
+		}
+		.offer__title {
+			font-size: 36px;
+			max-width: 400px;
+			text-align: center;
+		}
+		.form__input {
+			margin-top: 50px;
+		}
+		.france {
+			top: 75px;
+			left: 35px;
+		}
+		.header {
+			padding-top: 30px;
+		}
+		.form__input, .form__btn, .form__input::placeholder {
+			font-size: 20px;
+		}
+		.title_well {
+			font-size: 30px;
+		}
+		.logo_footer {
+			margin-bottom: 0;
+		}
+		.girl_md {
+			height: 850px;
+			background: url('../img/girl.png') no-repeat top center / cover;
+			margin-top: 100px;
+			background-position: 45%;
+		}
+		.girl__pic {
+			display: none;
+		}
+		.samsung {
+			width: 280px;
+			height: 200px;
+			position: absolute;
+			top: 140px;
+			left: 131.5px;
+			z-index: 1;
+			padding: 10px 0;
+		}
+		.samsung__text {
+			font-size: 18px;
+		}
+		.samsung__line {
+			display: block;
+		}
+		.logos {
+			display: block;
+			margin: 0 auto 50px;
+		}
+		.sponsors {
+			padding-bottom: 50px;
+		}
+		.well {
+			margin-bottom: 550px;
+			padding-bottom: 0;
+		}
+		.ask-girl {
+			top: 800px;
+		}
+		.answer {
+			margin-bottom: 100px;
+		}
+		.answer_first::after {
+			top: 97px;
+		}
+	}
+
+	/* 320-576px */
+	@media screen and (max-width: 576px) {
+		.ask-girl {
+			max-width: 320px;
+		}
+		.answer__info {
+			font-size: 18px;
+		}
+		.form__input, .form__btn {
+			max-width: 390px;
+		}
+		.samsung {
+			position: relative;
+			right: 0;
+			left: 0;
+			margin: 0 auto;
+			width: 250px;
+		}
+		.girl_md {
+			background-position: 47.5%;
+		}
+		.france {
+			top: 75px;
+		}
+		.well {
+			margin-bottom: 350px;
+		}
+		.answer_first::after {
+			top: 90px;
+		}
+		.ask-girl {
+			top: 735px;
+		}
+		.elem {
+			left: 0;
+			top: 15px;
+		}
+	}
+
+	@media screen and (max-width: 400px) {
+		.offer__title {
+			font-size: 27px;
+		}
+		.france {
+			left: 25px;
+		}
+		.form__input, .form__btn {
+			width: 310px;
+		}
+		.answer__info {
+			max-width: 170px;
+		}
+	}
+
+
+	/* 	End Main Page */
+
+
+	/* Phone */
+
+
+	/* 992-1200px */
+	@media screen and (max-width: 1200px) {
+		.samsung-phone, .iphone-pic {
+			max-width: 600px;
+		}
+		.iphone {
+			padding-bottom: 75px;
+		}
+		.logo_phone {
+			margin-bottom: 50px;
+		}
+		.row_brd {
+			padding-bottom: 100px;
+		}
+		.iphone {
+			padding-top: 0;
+		}
+	}
+
+	/* 768-992px */
+	@media screen and (max-width: 992px) {
+		.samsung-md, .iphone-md {
+			right: 0;
+			top: 235px;
+			position: absolute;
+		}
+		.iphone-md {
+			top: 140px;
+		}
+	}
+
+	/* 576-768px */
+	@media screen and (max-width: 768px) {
+		.elem2 {
+			max-width: 650px;
+		}
+		.phone-offer__title {
+			font-size: 40px;
+			text-align: center;
+		}
+		.get-btn {
+			display: -webkit-flex;
+			display: -moz-flex;
+			display: -ms-flex;
+			display: -o-flex;
+			display: flex;
+			justify-content: center;
+			margin: 0 auto;
+			margin-top: 450px;
+		}
+		.samsung-md {
+			top: 500px;
+		}
+		.iphone-md {
+			top: 450px;
+		}
+		.left {
+			justify-content: center;
+		}
+	}
+
+	/* 320-576px */
+	@media screen and (max-width: 576px) {
+		.get-btn, .out {
+			width: 375px;
+			font-size: 20px;
+			display: -webkit-flex;
+			display: -moz-flex;
+			display: -ms-flex;
+			display: -o-flex;
+			display: flex;
+			justify-content: center;
+			margin: 0 auto;
+		}
+		.elem2 {
+			max-width: 400px;
+		}
+		.samsung-md {
+			top: 390px;
+		}
+		.phone-offer__title {
+			font-size: 36px;
+			text-align: center;
+		}
+		.steps__info {
+			font-size: 18px;
+		}
+		.steps {
+			margin-bottom: 470px;
+		}
+	}
+
+	@media screen and (max-width: 400px) {
+		.steps {
+			margin-bottom: 420px;
+		}
+		.get-btn, .out {
+			width: 285px;
+		}
+	}
+
+	@media screen and (max-width: 355px) {
+		.steps {
+			margin-bottom: 350px;
+		}
+		.left__info {
+			font-size: 16px;
+		}
+	}
+
+
+
+	/* End Phone */
+
+
+
+
+	/* Congratulation */
+
+	/* 992-1200px */
+	@media screen and (max-width: 1200px) {
+		.cont {
+			max-width: 565px;
+		}
+		.header_cong {
+			padding-bottom: 75px;
+		}
+		.cont__btn {
+			width: 500px;
+			font-size: 22px;
+		}
+		.logo_cong {
+			margin: 0;
+			margin-bottom: 50px;
+		}
+	}
+
+	/* 768-992px */
+	@media screen and (max-width: 992px) {
+		.cong {
+			padding-left: 15px;
+		}
+		.cont__info {
+			font-size: 21px;
+		}
+		.cont__btn {
+			font-size: 18px;
+			width: 400px;
+		}
+		.refuse {
+			font-size: 20px;
+			color: #c8c5e3;
+		}
+	}
+
+	/* 576-768px */
+	@media screen and (max-width: 768px) {
+		.cong {
+			background-position: 90%;
+		}
+	}
+
+	/* 320-576px */
+	@media screen and (max-width: 576px) {
+		.cong {
+			background: url('../img/card-bgd-sm.jpg') no-repeat center bottom / cover;
+			height: 660px;
+			padding: 0;
+			padding-top: 50px;
+		}
+		.cont__title {
+			font-size: 30px;
+		}
+		.cont__info {
+			font-size: 18px;
+			text-align: center;
+		}
+		.cont__btn {
+			width: 280px;
+			font-size: 13px;
+			height: 60px;
+			margin: 35px 0;
+			text-align: center;
+		}
+		.refuse {
+			font-size: 16px;
+		}
+		.header_cong {
+			padding-top: 30px;
+			padding-bottom: 50px;
+		}
+		.elem {
+			max-width: 300px;
+		}
+	}
+
+
+	/* End Congratulation */
+
+
+	/* Congrats Page */
+
+	/* 992-1200px */
+	@media screen and (max-width: 1200px) {
+		.gift-girl {
+			max-width: 475px;
+			top: 100px;
+		}
+		.offer__txt {
+			font-size: 22px;
+			max-width: 575px;
+		}
+		.tom-pic {
+			max-width: 400px;
+		}
+		.comments__data {
+			max-width: 450px;
+		}
+	}
+
+	/* 768-992px */
+	@media screen and (max-width: 992px) {
+		.offer__title_congs {
+			margin: 0;
+			font-size: 40px;
+			max-width: 365px;
+		}
+		.gift-girl {
+			max-width: 350px;
+		}
+		.offer__txt {
+			font-size: 20px;
+			max-width: 425px;
+		}
+		.btn-wrap {
+			justify-content: center;
+		}
+		.comments__data {
+			max-width: 380px;
+		}
+		.comments__text, .comments__time {
+			font-size: 14px;
+		}
+		.share {
+			max-width: 350px;
+			margin: 30px auto;
+		}
+		.feedback {
+			padding-bottom: 75px;
+		}
+		.icon-aft_sec::after {
+			width: 200px;
+			right: -200px;
+		}
+		.shipping__info {
+			font-size: 20px;
+		}
+	}
+
+	/* 576-768px */
+	@media screen and (max-width: 768px) {
+		.icon-aft_sec::after {
+			width: 150px;
+			right: -150px;
+		}
+		.shipping__info {
+			font-size: 18px;
+		}
+		.conf {
+			display: block;
+		}
+		.gift-girl {
+			top: 85px;
+			max-width: 250px;
+		}
+		.offer__title_congs {
+			margin: 0;
+			font-size: 36px;
+			max-width: 305px;
+		}
+		.offer__txt {
+			max-width: 470px;
+			font-size: 18px;
+		}
+	}
+
+	/* 320-576px */
+	@media screen and (max-width: 576px) {
+		.conf {
+			display: none;
+		}
+		.shipping {
+			-webkit-flex-direction: column;
+			-moz-flex-direction: column;
+			-ms-flex-direction: column;
+			-o-flex-direction: column;
+			flex-direction: column;
+			height: auto;
+		}
+		.fill-btn {
+			font-size: 20px;
+		}
+		.icon-aft::after {
+			display: none;
+		}
+		.comments__time {
+			font-size: 12px;
+		}
+		.tom-pic {
+			max-width: 200px;
+			margin-left: 31%;
+		}
+		.share {
+			max-width: 300px;
+		}
+		.com-form__btn {
+			font-size: 18px;
+		}
+		.file::before {
+			font-size: 25px;
+			padding: 15px;
+		}
+		.shipping {
+			padding: 65px 0;
+		}
+		.shipping__item_mrg {
+			margin: 90px 0;
+		}
+		.shipping__info {
+			font-size: 24px;
+		}
+		.fill-btn {
+			width: 343px;
+		}
+		.btn-wrap img {
+			max-width: 30px;
+		}
+		.right {
+			top: 0;
+			right: 0!important;
+		}
+		.lft {
+			margin-bottom: 0 !important;
+			left: 0;
+		}
+		.offer__title_congs {
+			margin: 0 auto;
+		}
+		.offer__txt {
+			text-align: center;
+			margin-bottom: 0;
+		}
+		.elem {
+			max-width: 300px;
+		}
+		.delivery {
+			padding-top: 50px;
+		}
+		.offer_congs img {
+			position: relative;
+		}
+		.ggirl {
+			width: 100%;
+			right: -15px;
+			margin-bottom: 45px;
+			margin-top: 30px;
+		}
+		.comments__text {
+			max-width: 300px;
+		}
+		.comments__name {
+			font-size: 16px;
+		}
+	}
+
+	@media screen and (max-width: 400px) {
+		.comments__time {
+			display: none;
+		}
+		.comments__data {
+			max-width: 200px;
+		}
+		.tom-pic {
+			max-width: 175px;
+			margin-left: 40%;
+		}
+		.fill-btn {
+			width: 300px;
+		}
+		.btn-wrap img {
+			display: none;
+		}
+	}
+
+	/* End Congrats Page */
+
+
+
+
+	/* Processed Page */
+
+	/* 992-1200px */
+	@media screen and (max-width: 1200px) {
+		.header_proc {
+			padding-bottom: 100px;
+		}
+	}
+
+	/* 768-992px */
+	@media screen and (max-width: 992px) {
+		.load__info {
+			font-size: 16px;
+		}
+		.load__item_circ::after {
+			width: 190px;
+			right: -130px;
+		}
+	}
+
+	/* 576-768px */
+	@media screen and (max-width: 768px) {
+		.offer__title_proc span {
+			font-size: 30px;
+		}
+		.offer__title_proc {
+			margin-bottom: 60px;
+		}
+		.header_proc {
+			padding-top: 30px;
+		}
+	}
+
+	/* 320-576px */
+	@media screen and (max-width: 576px) {
+		.load__info {
+			font-size: 14px;
+		}
+	}
+
+	@media screen and (max-width: 485px) {
+		.load__info {
+			font-size: 14px;
+		}
+		.load__item_circ::after {
+			width: 120px;
+			right: -75px;
+		}
+	}
+
+
+
+/* End Processed Page */
