@@ -116,7 +116,7 @@ img {
 	position: relative;
 	padding-top: 55px;
 	padding-bottom: 180px;
-	
+
 }
 
 .logo {
@@ -171,7 +171,7 @@ img {
 	text-align: center;
 	background-image: linear-gradient(white, white), radial-gradient(circle at top left, rgba(103,64,195,1),rgba(211,50,152,1));
 	background-origin: border-box;
-	background-clip: padding-box, border-box;
+  background-clip: padding-box, border-box;
 }
 
 .form__input::placeholder {
