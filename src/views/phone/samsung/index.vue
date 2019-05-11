@@ -18,9 +18,9 @@
           <div class="samsung-md d-sm-none">
             <img src="@/assets/img/galaxy.png" alt="">
           </div>
-          <button class="btn get-btn">
+          <router-link to="/congrats" tag="button" class="btn get-btn">
             Get it now
-          </button>
+          </router-link>
           <div class="left d-flex align-items-center">
             <img src="@/assets/img/star.png" alt="Star" class="left__pic star__pic">
             <p class="left__info">

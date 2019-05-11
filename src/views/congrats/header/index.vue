@@ -16,11 +16,11 @@
             <Description />
             <img src="@/assets/img/sm-gift.png" alt="" class="ggirl d-sm-none">
             <div class="btn-wrap d-flex align-items-center">
-              <img src="@/assets/img/left.png" alt="" class="lft">
-              <a href="#" class="btn fill-btn">
+              <img src="@/assets/img/left.png" alt="" class="lft" :class="{left_animation: isActiveClick}">
+              <a class="btn fill-btn" @mouseover="mouse_over()" @mouseleave="mouse_leave()" @click="clickHandler">
                 Fill my information
               </a>
-              <img src="@/assets/img/right.png" alt="" class="right">
+              <img src="@/assets/img/right.png" alt="" class="right" :class="{right_animation: isActiveClick}">
             </div>
           </div>
         </div>
@@ -40,10 +40,34 @@ export default {
     Logo,
     Title,
     Description
+  },
+  data () {
+    return {
+      isActiveClick: false
+    }
+  },
+  methods: {
+    mouse_over () {
+      this.isActiveClick = true
+    },
+    mouse_leave () {
+      this.isActiveClick = false
+    },
+    clickHandler (e) {
+      window.open('https://google.com', '_blank')
+    }
   }
 }
 </script>
 
-<style>
-
+<style scoped>
+  .lft, .right {
+    transition: all .2s ease-in-out;
+  }
+  .left_animation {
+    transform: translateX(10px);
+  }
+  .right_animation {
+    transform: translateX(-10px);
+  }
 </style>
