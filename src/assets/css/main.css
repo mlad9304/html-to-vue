@@ -1022,9 +1022,9 @@ img {
 	position: absolute;
 	display: block;
 	content: '';
-	width: 213px;
+	width: 285px;
 	height: 3px;
-	right: -157px;
+	right: -200px;
 	top: 29px;
 	background: rgba(103,64,195,1);
 	background: -moz-linear-gradient(left, rgba(103,64,195,1) 0%, rgba(214,64,159,1) 100%);

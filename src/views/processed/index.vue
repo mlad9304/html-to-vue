@@ -24,7 +24,7 @@
 <script>
 import Logo from '@/components/Logo'
 import Title from './components/Title'
-import Processed from './components/Processed'
+import Processed from './components/processed'
 import Sim from './components/sim/Sim'
 import SimMobile from './components/sim/SimMobile'
 
