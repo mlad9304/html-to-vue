@@ -1,7 +1,7 @@
 <template>
   <div class="header">
     <img src="@/assets/img/elements.png" alt="" class="elem">
-    <Samsung :city="city" :name="name" />
+    <Samsung :name="currentName" :city="currentCity" />
     <div class="container">
       <div class="row">
         <div class="col-12">
@@ -16,12 +16,13 @@
           </div>
         </div>
       </div>
-      <SamsungMobile :name="name" :city="city" />
+      <SamsungMobile :name="currentName" :city="currentCity" />
     </div>
   </div>
 </template>
 
 <script>
+import { mapGetters, mapActions } from 'vuex'
 import Logo from '@/components/Logo'
 import CheckPointsTitle from './check-points/Title'
 import CheckPointsForm from './check-points/Form'
@@ -37,7 +38,18 @@ export default {
     Samsung,
     SamsungMobile
   },
-  props: ['name', 'city']
+  computed: {
+    ...mapGetters(['currentName', 'currentCity'])
+  },
+  methods: {
+    ...mapActions(['startGetNameAndCity', 'endGetNameAndCity'])
+  },
+  created () {
+    this.startGetNameAndCity()
+  },
+  beforeDestroy () {
+    this.endGetNameAndCity()
+  }
 }
 </script>
 

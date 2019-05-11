@@ -1,3 +1,5 @@
+var sInterval
+
 const state = {
   names: [
     'Claudette Pinneau',
@@ -104,12 +106,14 @@ const state = {
     'ROUBAIX'
   ],
   currentName: 'Claudette Pinneau',
-  currentCity: 'LYON'
+  currentCity: 'LYON',
+  phoneNumber: ''
 }
 
 const getters = {
   currentName: state => state.currentName,
-  currentCity: state => state.currentCity
+  currentCity: state => state.currentCity,
+  phoneNumber: state => state.phoneNumber
 }
 
 const actions = {
@@ -122,16 +126,23 @@ const actions = {
     commit('setCurrentCity', state.cities[index])
   },
   startGetNameAndCity ({ dispatch }) {
-    setInterval(function () {
+    sInterval = setInterval(function () {
       dispatch('getCurrentName')
       dispatch('getCurrentCity')
     }, 4000)
+  },
+  endGetNameAndCity () {
+    clearInterval(sInterval)
+  },
+  changePhoneNumber ({ commit }, phoneNumber) {
+    commit('setPhoneNumber', phoneNumber)
   }
 }
 
 const mutations = {
   setCurrentName: (state, name) => (state.currentName = name),
-  setCurrentCity: (state, city) => (state.currentCity = city)
+  setCurrentCity: (state, city) => (state.currentCity = city),
+  setPhoneNumber: (state, phoneNumber) => (state.phoneNumber = phoneNumber)
 }
 
 export default {
