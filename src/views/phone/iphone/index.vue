@@ -14,7 +14,7 @@
             Out of stock
           </button>
           <div class="left d-flex align-items-center">
-            <img src="@/assets/img/star.png" alt="Star" class="left__pic">
+            <img src="@/assets/img/star.png" alt="Star" class="left__pic star__pic">
             <p class="left__info">
               Left 3 pc on this loyalty points
             </p>

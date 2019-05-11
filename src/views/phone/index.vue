@@ -20,5 +20,10 @@ export default {
 </script>
 
 <style>
-
+  .star__pic {
+    transition: all .2s ease-in-out;
+  }
+  .star__pic:hover {
+    transform: scale(1.3);
+  }
 </style>
