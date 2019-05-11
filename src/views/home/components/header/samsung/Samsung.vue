@@ -5,13 +5,13 @@
       <p class="samsung__text">
         Samsung S10 Winner
       </p>
-      <p class="samsung__name">
-        {{ name }}
+      <p class="samsung__name" :class="{'animated fadeIn': isChanged}">
+        {{ winner.name }}
       </p>
-      <div class="samsung__line"></div>
-      <div class="samsung__addr px-2">
+      <div class="samsung__line" :class="{'animated fadeIn': isChanged}"></div>
+      <div class="samsung__addr px-2 d-flex" :class="{'animated fadeIn': isChanged}">
         <i class="fa fa-map-marker-alt"></i>
-        from {{ city }}, 1 min ago
+        <p class="city">from {{ winner.city }}, 1 min ago</p>
       </div>
     </div>
     <img src="@/assets/img/girl.png" alt="" class="girl__pic">
@@ -21,10 +21,26 @@
 <script>
 export default {
   name: 'samsung',
-  props: ['name', 'city']
+  props: ['winner'],
+  data () {
+    return {
+      isChanged: false
+    }
+  },
+  watch: {
+    winner (newValue) {
+      this.isChanged = true
+      setTimeout(() => {
+        this.isChanged = false
+      }, 800)
+    }
+  }
 }
 </script>
 
-<style>
-
+<style scoped>
+  .city {
+    text-align: justify;
+    text-justify: inter-word;
+  }
 </style>

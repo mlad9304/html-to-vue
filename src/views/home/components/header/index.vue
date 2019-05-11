@@ -1,7 +1,7 @@
 <template>
   <div class="header">
     <img src="@/assets/img/elements.png" alt="" class="elem">
-    <Samsung :name="currentName" :city="currentCity" />
+    <Samsung :winner="winner" />
     <div class="container">
       <div class="row">
         <div class="col-12">
@@ -16,7 +16,7 @@
           </div>
         </div>
       </div>
-      <SamsungMobile :name="currentName" :city="currentCity" />
+      <SamsungMobile :winner="winner" />
     </div>
   </div>
 </template>
@@ -39,16 +39,16 @@ export default {
     SamsungMobile
   },
   computed: {
-    ...mapGetters(['currentName', 'currentCity'])
+    ...mapGetters(['winner'])
   },
   methods: {
-    ...mapActions(['startGetNameAndCity', 'endGetNameAndCity'])
+    ...mapActions(['startGetWinner', 'endGetWinner'])
   },
   created () {
-    this.startGetNameAndCity()
+    this.startGetWinner()
   },
   beforeDestroy () {
-    this.endGetNameAndCity()
+    this.endGetWinner()
   }
 }
 </script>

@@ -105,33 +105,28 @@ const state = {
     'LE PERREUX-SUR-MARNE',
     'ROUBAIX'
   ],
-  currentName: 'Claudette Pinneau',
-  currentCity: 'LYON',
+  winner: {
+    name: 'Claudette Pinneau',
+    city: 'LYON'
+  },
   phoneNumber: ''
 }
 
 const getters = {
-  currentName: state => state.currentName,
-  currentCity: state => state.currentCity,
+  winner: state => state.winner,
   phoneNumber: state => state.phoneNumber
 }
 
 const actions = {
-  getCurrentName ({ commit, state }) {
-    const index = Math.floor(Math.random() * state.names.length)
-    commit('setCurrentName', state.names[index])
-  },
-  getCurrentCity ({ commit, state }) {
-    const index = Math.floor(Math.random() * state.cities.length)
-    commit('setCurrentCity', state.cities[index])
-  },
-  startGetNameAndCity ({ dispatch }) {
+  startGetWinner ({ commit, state }) {
     sInterval = setInterval(function () {
-      dispatch('getCurrentName')
-      dispatch('getCurrentCity')
+      commit('setWinner', {
+        name: state.names[Math.floor(Math.random() * state.names.length)],
+        city: state.cities[Math.floor(Math.random() * state.cities.length)]
+      })
     }, 4000)
   },
-  endGetNameAndCity () {
+  endGetWinner () {
     clearInterval(sInterval)
   },
   changePhoneNumber ({ commit }, phoneNumber) {
@@ -140,8 +135,7 @@ const actions = {
 }
 
 const mutations = {
-  setCurrentName: (state, name) => (state.currentName = name),
-  setCurrentCity: (state, city) => (state.currentCity = city),
+  setWinner: (state, winner) => (state.winner = winner),
   setPhoneNumber: (state, phoneNumber) => (state.phoneNumber = phoneNumber)
 }
 
