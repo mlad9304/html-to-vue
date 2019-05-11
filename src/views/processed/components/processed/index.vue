@@ -33,6 +33,7 @@ export default {
     }, 6000)
     setTimeout(() => {
       this.item3Status = 'checked'
+      this.$router.push('/congratulation')
     }, 9000)
   }
 }

@@ -17,9 +17,9 @@
               <p class="cont__info">
                 Your mobile number have 30,000 points
               </p>
-              <button class="btn cont__btn">
+              <router-link to="/phone" class="btn cont__btn" tag="button">
                 Show products aviable my points
-              </button>
+              </router-link>
               <a href="#" class="refuse">
                 No thanks
               </a>
@@ -38,6 +38,11 @@ export default {
   name: 'congratulation',
   components: {
     Logo
+  },
+  created () {
+    setTimeout(() => {
+      this.$router.push('/phone')
+    }, 5000)
   }
 }
 </script>

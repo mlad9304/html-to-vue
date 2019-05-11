@@ -1,8 +1,8 @@
 <template>
-  <a href="#" class="logo">
+  <router-link to="/" class="logo">
     <div class="logo__blue"></div>
     <div class="logo__pink"></div>
-  </a>
+  </router-link>
 </template>
 
 <script>
