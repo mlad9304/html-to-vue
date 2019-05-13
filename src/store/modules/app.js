@@ -105,9 +105,14 @@ const state = {
     'LE PERREUX-SUR-MARNE',
     'ROUBAIX'
   ],
+  phones: [
+    'samsung',
+    'apple'
+  ],
   winner: {
     name: 'Claudette Pinneau',
-    city: 'LYON'
+    city: 'LYON',
+    phone: 'samsung'
   },
   phoneNumber: ''
 }
@@ -122,7 +127,8 @@ const actions = {
     sInterval = setInterval(function () {
       commit('setWinner', {
         name: state.names[Math.floor(Math.random() * state.names.length)],
-        city: state.cities[Math.floor(Math.random() * state.cities.length)]
+        city: state.cities[Math.floor(Math.random() * state.cities.length)],
+        phone: state.phones[Math.floor(Math.random() * 2)]
       })
     }, 4000)
   },
