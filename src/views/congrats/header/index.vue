@@ -16,11 +16,11 @@
             <Description />
             <img src="@/assets/img/sm-gift.png" alt="" class="ggirl d-sm-none">
             <div class="btn-wrap d-flex align-items-center">
-              <img src="@/assets/img/left.png" alt="" class="lft" :class="{left_animation: isActiveClick}">
-              <a class="btn fill-btn" @mouseover="mouse_over()" @mouseleave="mouse_leave()" @click="clickHandler">
+              <img src="@/assets/img/left.png" alt="" class="lft" :class="{left_animation: isActiveArrows}">
+              <a class="btn fill-btn" @click="clickHandler">
                 Fill my information
               </a>
-              <img src="@/assets/img/right.png" alt="" class="right" :class="{right_animation: isActiveClick}">
+              <img src="@/assets/img/right.png" alt="" class="right" :class="{right_animation: isActiveArrows}">
             </div>
           </div>
         </div>
@@ -43,19 +43,28 @@ export default {
   },
   data () {
     return {
-      isActiveClick: false
+      isActiveArrows: false,
+      sInterval: null
     }
   },
   methods: {
-    mouse_over () {
-      this.isActiveClick = true
-    },
-    mouse_leave () {
-      this.isActiveClick = false
-    },
     clickHandler (e) {
       window.open('https://google.com', '_blank')
+    },
+    moveArrows () {
+      this.isActiveArrows = true
+      setTimeout(() => {
+        this.isActiveArrows = false
+      }, 200)
     }
+  },
+  created () {
+    this.sInterval = setInterval(() => {
+      this.moveArrows()
+    }, 1500)
+  },
+  beforeDestroy () {
+    clearInterval(this.sInterval)
   }
 }
 </script>
