@@ -3,9 +3,13 @@
     <div class="col-12">
       <div class="girl girl_md ml-auto mr-auto">
         <div class="samsung d-flex flex-column align-items-center justify-content-around">
-          <img src="@/assets/img/samsung.svg" alt="Samsung" class="samsung__pic">
-          <p class="samsung__text">
-            Samsung S10 Winner
+          <img
+            :src="require(`@/assets/img/${winner.phone}.svg`)"
+            alt="Samsung"
+            :class="{[phoneImg]: true, 'animated fadeIn': isChanged}"
+          >
+          <p class="samsung__text" :class="{'animated fadeIn': isChanged}">
+            {{ phoneStr }} Winner
           </p>
           <p class="samsung__name" :class="{'animated fadeIn': isChanged}">
             {{ winner.name | stringFormatter }}
@@ -29,6 +33,14 @@ export default {
   data () {
     return {
       isChanged: false
+    }
+  },
+  computed: {
+    phoneStr () {
+      return this.winner.phone === 'samsung' ? 'Samsung S10' : 'Apple'
+    },
+    phoneImg () {
+      return this.winner.phone === 'samsung' ? 'samsung__pic' : 'apple__pic'
     }
   },
   watch: {
