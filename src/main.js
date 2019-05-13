@@ -2,13 +2,15 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
 import vueHeadful from 'vue-headful'
+import VueMask from 'v-mask'
 import App from './App'
 import router from './router'
 import store from './store'
 
-Vue.config.productionTip = false
-
 Vue.component('vue-headful', vueHeadful)
+Vue.use(VueMask)
+
+Vue.config.productionTip = false
 
 /* eslint-disable no-new */
 new Vue({

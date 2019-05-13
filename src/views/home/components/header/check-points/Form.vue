@@ -10,8 +10,9 @@
         :class="{invalid: isInvalid}"
         placeholder="0X XX XX XX XX"
         required
+        v-mask="'## ## ## ## ##'"
         v-model="phoneNumber"
-      >
+      />
     </div>
     <button class="btn form__btn">Check my loyality points</button>
   </form>
