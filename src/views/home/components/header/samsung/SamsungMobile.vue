@@ -8,12 +8,12 @@
             Samsung S10 Winner
           </p>
           <p class="samsung__name" :class="{'animated fadeIn': isChanged}">
-            {{ winner.name }}
+            {{ winner.name | stringFormatter }}
           </p>
           <div class="samsung__line" :class="{'animated fadeIn': isChanged}"></div>
           <div class="samsung__addr px-2 d-flex" :class="{'animated fadeIn': isChanged}">
             <i class="fa fa-map-marker-alt"></i>
-            <p class="city">from {{ winner.city }}, 1 min ago</p>
+            <p class="city">from {{ winner.city | stringFormatter }}, 1 min ago</p>
           </div>
         </div>
         <img src="@/assets/img/girl.png" alt="" class="girl__pic">

@@ -6,9 +6,13 @@ import VueMask from 'v-mask'
 import App from './App'
 import router from './router'
 import store from './store'
+import * as filters from './filters'
 
 Vue.component('vue-headful', vueHeadful)
 Vue.use(VueMask)
+Object.keys(filters).forEach(key => {
+  Vue.filter(key, filters[key])
+})
 
 Vue.config.productionTip = false
 
