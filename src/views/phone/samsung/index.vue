@@ -63,13 +63,13 @@ export default {
       this.isActiveArrows = true
       setTimeout(() => {
         this.isActiveArrows = false
-      }, 200)
+      }, 500)
     }
   },
   created () {
     this.sInterval = setInterval(() => {
       this.moveArrows()
-    }, 1500)
+    }, 1000)
   },
   beforeDestroy () {
     clearInterval(this.sInterval)
@@ -79,7 +79,7 @@ export default {
 
 <style scoped>
   .lft, .right {
-    transition: all .2s ease-in-out;
+    transition: all .5s ease-in-out;
   }
   .left_animation {
     transform: translateX(10px);
